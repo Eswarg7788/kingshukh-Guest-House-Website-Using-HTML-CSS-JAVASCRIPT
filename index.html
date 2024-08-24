@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kingsukh Guest House</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            z-index: 0;
+
+
+
+            font-size: 24px;
+        }
+
+        .nav {
+            position: absolute;
+            z-index: 1;
+            color: rgb(10, 10, 10);
+            font-size: 18px;
+        }
+
+        .nav1 {
+            position: absolute;
+            margin-top: 70px;
+            z-index: 1;
+            color: rgb(12, 12, 12);
+            font-size: 18px;
+            text-decoration: none;
+            left: 500px;
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+
+        }
+
+        .a {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .nav {
+            position: absolute;
+            margin-left: 1250px;
+            margin-top: 55px;
+            padding: 12px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: rgb(251, 28, 102);
+            border: solid 3px rgb(251, 28, 102);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .nav:hover {
+            background-color: rgb(229, 69, 122);
+            border: solid 3px rgb(229, 69, 122);
+        }
+
+        .navbar {
+            position: absolute;
+            margin-top: 55px;
+            margin-left: 130px;
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .p1 {
+            font-size: 65px;
+            position: absolute;
+            z-index: 1;
+            margin-top: 300px;
+            margin-left: 400px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            animation: moveText 2s linear infinite;
+
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+
+        }
+
+
+        .p2 {
+            color: rgb(251, 28, 102);
+            ;
+        }
+
+        .book {
+            width: 1000px;
+            height: 110px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            bottom: 50px;
+            left: 300px;
+            border-radius: 7px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .a:hover {
+            border-bottom: solid 3px rgb(251, 48, 82);
+            animation: move forwards;
+
+        }
+
+        @keyframes move {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .book:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .booking {
+            padding: 12px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: rgb(251, 28, 102);
+            border: solid 3px rgb(251, 28, 102);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            left: 400px;
+            top: 30px;
+        }
+
+        .booking1 {
+            padding: 12px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: rgb(251, 28, 102);
+            border: solid 3px rgb(251, 28, 102);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .image {
+            width: 450px;
+            height: 600px;
+            border-radius: 10px;
+            position: relative;
+            left: 200px;
+        }
+
+        .column1 {
+            width: 50%;
+            position: relative;
+            top: 50px;
+
+        }
+
+        .column2 {
+            width: 70%;
+            position: relative;
+            top: 50px;
+
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .holiday {
+            font-size: 40px;
+        }
+
+        .para {
+            color: grey;
+            font-size: 20px;
+        }
+
+        .about {
+            color: rgb(243, 50, 11);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: blue;
+            font: 800;
+            font-size: 20px;
+        }
+
+        .left-space {
+            width: 20%;
+        }
+
+        .middle-content {
+            width: 60%;
+            margin: 0 15%;
+        }
+
+        .right-space {
+            width: 20%;
+        }
+
+        .holiday1 {
+            font-size: 49px;
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #services {
+            position: relative;
+            top: 85px;
+        }
+
+        .image-box {
+            position: relative;
+            width: 390px;
+            height: 300px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .content-box {
+            width: 390px;
+            height: 230px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            justify-content: center;
+            display: grid;
+            place-items: center;
+        }
+
+        .twobox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-radius: 10px;
+        }
+
+        .booking2 {
+            padding: 12px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: rgb(251, 28, 102);
+            border: solid 3px rgb(251, 28, 102);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .par {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            color: rgb(127, 125, 125);
+        }
+
+        .box {
+            width: 1200px;
+            height: 130px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            bottom: 50px;
+            left: 180px;
+            border-radius: 7px;
+            top: 550px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box1 {
+            position: relative;
+            top: 450px;
+            left: 50px;
+            width: 900px;
+        }
+
+        .service1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .s2 {
+            position: relative;
+            top: 450px;
+            left: 100px;
+        }
+
+        .ser {
+            font-size: 30px;
+            color: rgb(126, 2, 145);
+        }
+
+        .img5 {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 8px;
+        }
+
+        .num {
+            align-content: center;
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #060606;
+            color: rgb(116, 114, 114);
+            padding: 20px;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            top: 800px;
+        }
+
+        .column {
+            width: 25%;
+            padding: 20px;
+        }
+
+        .column h3 {
+            margin-top: 0;
+        }
+
+        .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .column li {
+            margin-bottom: 10px;
+        }
+
+        .f1 {
+            color: aliceblue;
+        }
+
+        .social {
+            display: flex;
+            gap: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+
+
+        /* Base styles remain the same */
+
+        @media (max-width: 1200px) {
+            .navbar {
+                margin-left: 80px;
+            }
+
+            .nav {
+                margin-left: 1050px;
+            }
+
+            .p1 {
+                margin-left: 300px;
+            }
+
+            .book {
+                left: 250px;
+            }
+
+            .box {
+                left: 100px;
+            }
+
+            .s2 {
+                left: 50px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .navbar {
+                margin-left: 50px;
+            }
+
+            .nav {
+                margin-left: 750px;
+            }
+
+            .p1 {
+                font-size: 50px;
+                margin-left: 200px;
+            }
+
+            .book {
+                left: 200px;
+            }
+
+            .box {
+                width: 1000px;
+                left: 50px;
+            }
+
+            .s2 {
+                left: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                margin-left: 30px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .nav1 {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 20px;
+                left: 30px;
+                gap: 10px;
+            }
+
+            .p1 {
+                font-size: 40px;
+                margin-left: 100px;
+            }
+
+            .book {
+                width: 700px;
+                left: 50px;
+            }
+
+            .box {
+                width: 800px;
+                left: 30px;
+            }
+
+            .s2 {
+                top: 500px;
+                left: 20px;
+            }
+
+            .service1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar {
+                margin-left: 10px;
+            }
+
+            .nav1 {
+                left: 20px;
+                font-size: 16px;
+            }
+
+            .p1 {
+                font-size: 35px;
+                margin-left: 50px;
+            }
+
+            .book {
+                width: 100%;
+                left: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .image-container img {
+                height: 500px;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                left: 0;
+            }
+
+            .s2 {
+                top: 520px;
+                left: 10px;
+            }
+
+            .service1 {
+                display: block;
+            }
+
+            .column1,
+            .column2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .twobox {
+                grid-template-columns: 1fr;
+            }
+
+            .image-box {
+                width: 100%;
+            }
+
+            .content-box {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                font-size: 18px;
+            }
+
+            .p1 {
+                font-size: 30px;
+                margin-left: 30px;
+                text-align: center;
+            }
+
+            .book {
+                width: 90%;
+                left: 5%;
+            }
+
+            .box {
+                width: 90%;
+                left: 5%;
+            }
+
+            .service1 {
+                text-align: center;
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .image-container img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .navbar {
+                font-size: 16px;
+            }
+
+            .p1 {
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            .book {
+                width: 100%;
+                left: 0;
+                margin: 0 auto;
+            }
+
+            .box {
+                width: 100%;
+                left: 0;
+            }
+
+            .service1 {
+                text-align: center;
+            }
+
+            .s2 {
+                top: 540px;
+                left: 5px;
+            }
+
+            .column1,
+            .column2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .twobox {
+                grid-template-columns: 1fr;
+            }
+
+            .image-box,
+            .content-box {
+                width: 100%;
+            }
+
+            .image-container img {
+                height: 300px;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 10px;
+            }
+
+            .column {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+iframe{
+    position: relative;
+    top: 600px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <a href="">
+            <div class="navbar">kingsukh <br>Guest House</div>
+        </a>
+        <div class="nav1">
+            <a href="" class="a">Home</a>
+            <a href="#aboutus" class="a">About</a>
+            <a href="#services" class="a">Services</a>
+            <a href="" class="a">Rooms</a>
+            <a href="" class="a">Gallery</a>
+            <a href="" class="a">Contact</a>
+        </div>
+        <a href="" class="nav">
+            <div>Book Now</div>
+        </a>
+        <div class="p1">Make Yourself At Home <br>In Our <span class="p2">Guest House.</span> </div>
+        <img src="ayodhya.webp" alt="" class="img1">
+        <div class="book">
+            <a href="" class="now">
+                <div class="booking">Book Now</div>
+            </a>
+        </div>
+    </div><br>
+    <section id="aboutus">
+        <div class="row">
+            <div class="column1">
+                <img src="out.jpg" alt="" class="image">
+            </div>
+            <div class="column2">
+                <h3 class="about">ABOUT US</h3><br>
+                <h1 class="holiday">The Best Holidays Start Here!</h1><br>
+                <p class="para">Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure
+                    of Biharinath
+                    Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the
+                    captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our
+                    verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty
+                    and
+                    heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after
+                    your
+                    stay.</p><br><br>
+                <a href="">
+                    <h3>Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</h3>
+                </a> <br>
+                <h3>Contact us: +91 9007062180 </h3><br>
+                <div class="booking1">Book Now</div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="services">
+
+        <div class="left-space"></div>
+        <div class="middle-content">
+            <h3 class="about">OUR LIVING ROOM</h3>
+            <div class="holiday1">The Most Memorable Rest <p>Time Starts Here.</p>
+            </div><br>
+            <div class="twobox">
+                <div class="image-box">
+                    <img src="small.jpg">
+                    <div class="content-box">
+                        <h2>Cozy Haven Room</h2>
+                        <p class="par">Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate
+                            relaxation.</p><br>
+                        <h3>Starting from Rs. 1000/night</h3><br>
+                        <a href="">
+                            <div class="booking2">Book Now</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="large.jpg">
+                    <div class="content-box">
+                        <h2>Spacious Serenity Suite</h2>
+                        <p class="par">Indulge in luxury and ample space in our Spacious Serenity Suite, where
+                            tranquility meets roomy elegance.</p><br><br>
+                        <h3>Starting from Rs. 1500/night</h3><br><br>
+                        <a href="">
+                            <div class="booking2">Book Now</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-space"></div>
+    </section>
+
+    <div class="service1">
+        <div class="s1">
+            <img src="palash.webp" class="box1">
+        </div>
+        <div class="s2">
+            <h3 class="about">SERVICES</h3>
+            <h1 class="holiday">Strive Only For the <h1 class="holiday">Best.</h1>
+            </h1><br>
+            <h4 class="ser"><img src="img.png" class="img5">High Class Security</h4><br><br>
+            <h4 class="ser"><img src="24.png" class="img5">24 Hours Room Service</h4><br><br>
+            <h4 class="ser"><img src="res.png" class="img5">Restaurant</h4><br><br>
+            <h4 class="ser"><img src="guide.png" class="img5">Tourist Guide Support</h4><br><br>
+        </div>
+    </div>
+
+
+
+    <div class="box">
+        <div class="num">100+ <p>Booking Completed</p>
+        </div>
+        <div class="num">150+ <p>Happy Customers</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h3 class="about"></h3>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+    <p><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5750628898586!2d80.276735174843!3d13.062698487261144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5268a0db9f748d%3A0x445b3afd24586ce5!2sM.%20A.%20Chidambaram%20Stadium!5e0!3m2!1sen!2sin!4v1724260409995!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+    <footer>
+        <div class="column">
+            <h3 class="f1">Kingsukh <p>Guest</p>
+                <p>House</p><br>
+            </h3>
+            <ul>
+                <li>Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels,
+                    making every moment of your getaway truly extraordinary</li>
+                <div class="booking2">Book Now</div>
+            </ul>
+        </div>
+        <div class="column">
+            <h3 class="f1">Quick Links</h3>
+            <ul>
+                <li>Browse Destinations</li>
+                <li>Special Offers & Packages</li>
+                <li>Room Types & Amenities</li>
+                <li>Customer Reviews & Ratings</li>
+                <li>Travel Tips & Guides</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3 class="f1">Our Services</h3>
+            <ul>
+                <li>Concierge Assistance</li>
+                <li>Flexible Booking Options</li>
+                <li>Airport Transfers</li>
+                <li>Wellness & Recreation</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3 class="f1">Contact Us</h3>
+            <ul>
+                <li>Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</li>
+                <li>kkghosh0099@gmail.com</li>
+                <li>+91 9007062180 </li>
+                <div class="social">
+                    <a href="" class="social"><img src="instagram.png" alt=""></a>
+                    <a href="" class="social"> <img src="facebook.png" alt=""></a>
+                    <a href="" class="social"> <img src="twitter.png" alt=""></a>
+                    <a href="" class="social"> <img src="youtube.png" alt=""></a>
+                </div>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        menuLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>
